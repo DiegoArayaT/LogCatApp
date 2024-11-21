@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LogCatApp</string>
+    <string name="title">Raza de gatos</string>
+    <string name="search_bar">Buscar una raza específica</string>
 </resources>
