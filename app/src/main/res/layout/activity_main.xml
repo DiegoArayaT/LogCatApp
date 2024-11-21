@@ -7,13 +7,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/title_background"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:background="@color/redd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rubik_bubbles"
+        android:foregroundGravity="center"
+        android:text="@string/title"
+        android:textColor="@color/brownn"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <ImageView
+        android:id="@+id/image_title"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@null"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/title_background"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        app:srcCompat="@mipmap/image_title" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="378dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_radius"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/search_bar"
+        android:textColor="#40000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/title_background"
+        app:layout_constraintVertical_bias="0.03"
+        android:autofillHints="raza_gatos"
+        android:minHeight="48dp"
+        android:minWidth="48dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
